@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>核心团队 | 智药设计</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .member-card {
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px -1px rgba(0, 97, 255, 0.1),
+          0 2px 4px -1px rgba(0, 97, 255, 0.06);
+      }
+      .member-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 15px -3px rgba(0, 97, 255, 0.15),
+          0 4px 6px -2px rgba(0, 97, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <!-- 导航栏（与首页保持一致） -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-900"
+              >智药设计</a
+            >
+            <div class="hidden md:flex space-x-4 ml-8">
+              <a
+                href="index.html#services"
+                class="text-gray-700 hover:text-blue-600 px-3 py-2"
+                >服务体系</a
+              >
+              <a
+                href="index.html#tech"
+                class="text-gray-700 hover:text-blue-600 px-3 py-2"
+                >技术优势</a
+              >
+              <a href="team.html" class="text-blue-600 font-medium px-3 py-2"
+                >团队介绍</a
+              >
+              <!-- 当前页面高亮 -->
+              <a
+                href="index.html#cases"
+                class="text-gray-700 hover:text-blue-600 px-3 py-2"
+                >案例中心</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center">
+            <a
+              href="index.html#contact"
+              class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+              >联系我们</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 团队介绍主内容 -->
+    <div class="pt-16 bg-blue-50">
+      <div class="container mx-auto px-4 py-16">
+        <!-- 页面标题 -->
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h1 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            核心研发团队
+          </h1>
+          <p class="text-gray-600">
+            由药学、计算机、生物学领域专家组成，平均行业经验10年+
+          </p>
+        </div>
+
+        <!-- 成员卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="member-card bg-white rounded-lg p-6">
+            <div class="flex flex-col items-center">
+              <!-- 头像 -->
+              <img
+                src="https://picsum.photos/200/200?random=2"
+                alt="张三"
+                class="w-32 h-32 rounded-full object-cover mb-4 shadow-md"
+              />
+
+              <h3 class="text-xl font-semibold text-blue-900 mb-1">张三</h3>
+              <p class="text-gray-600 text-sm mb-4">首席科学家博士</p>
+
+              <div class="text-center mb-4">
+                <p class="text-gray-700 text-sm">药物专家</p>
+                <p class="text-gray-500 text-xs">专注AI药物设计</p>
+              </div>
+
+              <div class="border-t border-blue-100 w-full pt-4 text-center">
+                <p class="text-gray-600 text-sm">
+                  <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
+                  著名大学药学博士
+                </p>
+                <p class="text-gray-600 text-sm">
+                  <i class="fas fa-briefcase text-blue-500 mr-2"></i>
+                  资深研究员
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card bg-white rounded-lg p-6">
+            <div class="flex flex-col items-center">
+              <img
+                src="https://picsum.photos/200/200?random=3"
+                alt="李四"
+                class="w-32 h-32 rounded-full object-cover mb-4 shadow-md"
+              />
+              <h3 class="text-xl font-semibold text-blue-900 mb-1">李四</h3>
+              <p class="text-gray-600 text-sm mb-4">算法研发总监 博士</p>
+              <div class="text-center mb-4">
+                <p class="text-gray-700 text-sm">专家</p>
+                <p class="text-gray-500 text-xs">擅长多模态数据融合</p>
+              </div>
+              <div class="border-t border-blue-100 w-full pt-4 text-center">
+                <p class="text-gray-600 text-sm">
+                  <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
+                  计算机博士
+                </p>
+                <p class="text-gray-600 text-sm">
+                  <i class="fas fa-briefcase text-blue-500 mr-2"></i>
+                  药物研发组核心成员
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card bg-white rounded-lg p-6">
+            <div class="flex flex-col items-center">
+              <img
+                src="https://picsum.photos/200/200?random=4"
+                alt="王五"
+                class="w-32 h-32 rounded-full object-cover mb-4 shadow-md"
+              />
+              <h3 class="text-xl font-semibold text-blue-900 mb-1">王五</h3>
+              <p class="text-gray-600 text-sm mb-4">生物信息学专家 | 硕士</p>
+              <div class="text-center mb-4">
+                <p class="text-gray-700 text-sm">多组学数据分析</p>
+                <p class="text-gray-500 text-xs">
+                  专注疾病靶点发现、药物重定位
+                </p>
+              </div>
+              <div class="border-t border-blue-100 w-full pt-4 text-center">
+                <p class="text-gray-600 text-sm">
+                  <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
+                  加州大学旧金山分校生物信息学硕士（2020）
+                </p>
+                <p class="text-gray-600 text-sm">
+                  <i class="fas fa-briefcase text-blue-500 mr-2"></i>
+                  药明康德AI研发部高级工程师（2020-2023）
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 页脚（与首页保持一致） -->
+    <footer class="bg-blue-900 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="text-xl font-bold mb-4">智药设计</h4>
+            <p class="text-sm opacity-90">
+              专注AI药物研发的技术创新者<br />北京·上海·波士顿
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-3">快速链接</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-sm hover:underline">隐私政策</a></li>
+              <li><a href="#" class="text-sm hover:underline">服务条款</a></li>
+              <li><a href="#" class="text-sm hover:underline">加入我们</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-3">联系我们</h4>
+            <p class="text-sm opacity-90">
+              邮箱：contact@zhiyao.com<br />电话：+86 10-12345678
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-8 border-t border-blue-700 pt-4 text-center text-sm opacity-70"
+        >
+          © 2025 智药设计 | 京ICP备20250001号-1
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
